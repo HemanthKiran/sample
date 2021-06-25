@@ -1,27 +1,17 @@
-// import React, { Component } from "react";
-
-// export default class App extends Component {
-//   state = {
-//     name: "skill hub",
-//   };
-//   render() {
-//     return (
-//       <div>
-//         <h1>welcome to {this.state.name}</h1>
-//       </div>
-//     );
-//   }
-// }
-
-import React, { useState } from "react";
+import React from "react";
 
 const App = () => {
-  const [name, setName] = useState("skill Hub");
+  const styling = {
+    color: "orange",
+    textAlign: "center",
+    backgroundColor: "skyblue",
+    padding: "30px",
+    border: "2px solid black",
+  };
   return (
-    <div>
-      <h1>welcome to {name}</h1>
+    <div style={{ margin: "30px" }}>
+      <h1 style={styling}>Welcome to skill hub</h1>
     </div>
   );
 };
-
 export default App;
