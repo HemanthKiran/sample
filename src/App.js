@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { Component } from "react";
 
-function App() {
+// export default class App extends Component {
+//   state = {
+//     name: "skill hub",
+//   };
+//   render() {
+//     return (
+//       <div>
+//         <h1>welcome to {this.state.name}</h1>
+//       </div>
+//     );
+//   }
+// }
+
+import React, { useState } from "react";
+
+const App = () => {
+  const [name, setName] = useState("skill Hub");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>welcome to {name}</h1>
     </div>
   );
-}
+};
 
 export default App;
